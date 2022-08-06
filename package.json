@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@m-khalaf/lotide",
+  "version": "1.0.1",
+  "description": "contains a list of functions and performs cerain operations on arrays and objects",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/m-khalaf/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mohamed K",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/m-khalaf/lotide/issues"

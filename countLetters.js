@@ -10,7 +10,7 @@ const countLetters =function(strgs){
     else
     result[str]=1;
   }
-  return result
+  return result;
 }
 
 console.log(countLetters("lighthouse in the house"))
