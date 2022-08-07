@@ -1,6 +1,6 @@
 {
   "name": "@m-khalaf/lotide",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "contains a list of functions and performs cerain operations on arrays and objects",
   "main": "assertArraysEqual.js",
   "directories": {
