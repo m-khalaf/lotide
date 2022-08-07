@@ -35,14 +35,14 @@ describe('#eqObjects - \nArrays As Values', () => {
 });
 
 describe('#eqObjects - \nObjects As Values', () => {
-  x = { a: { z: 1 }, b: 2 };
-  y = { a: { z: 1 }, b: 2 };
-  a = { a: { y: 0, z: 1 }, b: 2 };
-  b = { a: { z: 1 }, b: 2 };
-  c = { a: { y: 0, z: 1 }, b: 2 };
-  d = { a: 1, b: 2 };
-  e = { a: { y: { c: 2 }, z: 1 }, b: 2 };
-  f = { a: { y: { c: 2 }, z: 1 }, b: 2 };
+  let x = { a: { z: 1 }, b: 2 };
+  let y = { a: { z: 1 }, b: 2 };
+  let a = { a: { y: 0, z: 1 }, b: 2 };
+  let b = { a: { z: 1 }, b: 2 };
+  let c = { a: { y: 0, z: 1 }, b: 2 };
+  let d = { a: 1, b: 2 };
+  let e = { a: { y: { c: 2 }, z: 1 }, b: 2 };
+  let f = { a: { y: { c: 2 }, z: 1 }, b: 2 };
 
   it('returns true', () => {
 
