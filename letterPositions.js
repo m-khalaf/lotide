@@ -1,19 +1,16 @@
 const letterPositions = function(sentence) {
   const results = {};
-  //let sentenceNoSpace = sentence.split(' ').join('');
-  for (let i=0; i<sentence.length; i++){
-    if (sentence[i]===' ') i++;
-    if (results[sentence[i]]){
-      results[sentence[i]].push(i);
-      
+  for (let i = 0; i < sentence.length; i++) { //loops over each letter in the string
+    if (sentence[i] === ' ') { //if the letter is a space moves to the next letter
+      i++;
     }
-    else {
-      results[sentence[i]]=[];
+    if (results[sentence[i]]) { //checks if the letter already exists in the results objects and if yes it pushes the index of letter to the array
       results[sentence[i]].push(i);
-
+    } else {
+      results[sentence[i]] = []; //the letter doesnt exists in the result object so it creates a new array and pushes the index
+      results[sentence[i]].push(i);
     }
-  
   }
   return results;
 };
-module.exports=letterPositions;
+module.exports = letterPositions;
