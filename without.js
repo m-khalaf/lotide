@@ -1,32 +1,11 @@
-const eqArrays = function(arr1,arr2) {
-    let equal;
-    for (let i = 0; i < arr1.length; i++) {
-      if (arr1[i] === arr2[i]) {
-        equal = true;
-      } else equal = false;
+const without = function(source,itemsToRemove) {
+  let newArr = [];
+  for (const x of source) {//loops over the source array
+    if (!itemsToRemove.includes(x)) {//checks if the itemsToRemove array include each item in the source array
+      newArr.push(x);//if itemsToRemove array does not include the value it gets pushed to the result array
     }
-    return equal;
-  };
-
-  const assertArraysEqual =function(ar1,ar2){
-    if(eqArrays(ar1,ar2))
-    console.log('arrays are equal')
-    else console.log('arrays are not equal')
   }
+  return newArr;
+};
 
-  const without = function (source,itemsToRemove){
-let newArr=source;
-    for (let i=0; i<newArr.length; i++){
-        for (let j=0; j<itemsToRemove.length; j++){
-            if(newArr[i]=== itemsToRemove[j]){
-                //newArr.push(source[i]);
-                newArr.splice(i,1);
-                
-            }
-        }
-    }
-    return newArr;
-  }
-
-  console.log(without([1, 2, 3], [1]))
-  console.log(without(["1", "2", "3"], [1, 2, "3"]))
+module.exports = without;
